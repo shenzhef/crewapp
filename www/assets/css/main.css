@@ -1,0 +1,43 @@
+  /* login screen */
+.main-submit{text-align: center;}
+.tabs, .tab{padding-top: 0!important;}
+
+.animated-checkbox:before{ width: 16px; height: 16px; border: 2px solid #d0d0d0; content: ""; display: block; margin: 0; transition: all 0.2s ease; box-sizing: border-box;}
+.animated-checkbox.waiting:before{ border-color: #f4b64b; border-left-color: transparent; border-radius: 50%; animation: rotate 1s ease-in-out 0s infinite;}
+.animated-checkbox.checked:before{ border-color: transparent transparent #33c882 #33c882; border-width: 0 0 2px 2px; transform: rotate(-45deg); height: 8px; animation: none; }
+
+
+/* Classes */
+.list-striped > li:not(.list-group-title):not(.item-divider):nth-of-type(odd){ background: #f9f9f9; }
+.item-class{ cursor: pointer; }
+.item-class .item-row{ width: 100%; }
+.item-class .item-inner.no-left-margin{ margin-left: calc(-1 * var(--f7-list-item-padding-horizontal)); width: calc(100% + var(--f7-list-item-padding-horizontal)); }
+.item-class-time{ width: 90px !important; text-align: center; font-weight: 700;}
+.item-class-body{}
+.item-class-body span{ font-weight: bold;}
+.item-class-action{ width: 25px !important; text-align: center; height: 16px;}
+
+/* Reservations */
+.item-reservation-name{ font-weight: bold; }
+.item-reservation-action{ width: 25px !important; text-align: center; height: 16px;}
+
+  /* week */
+.simple-list li {margin: 10px 20px 10px 0; font-size: 0.9em;padding-top: 12px;padding-bottom: 12px; line-height: 20px;}
+.simple-list .time{margin: 0 5px 0 5px;}
+.simple-list  .inline-childs > * {margin: .3em .5em .5em .8em;}
+.ul-week {padding-top: 5px!important;padding-bottom: 8px!important;}
+.date-tittle{margin-top: 15px;}
+
+/* programming */
+.prog-title{padding: 5px;}
+.prog-title:nth-child(even){background-color: #d8d4d4;}
+.workout{padding-top:10px; padding-bottom: 10px;}
+.list-programming{display: block!important;}
+
+/* FONTS */
+@font-face{font-family: 'Material Icons'; font-style: normal; font-weight: 400; src: url('../fonts/material-icons/MaterialIcons-Regular.eot'); src: local('Material Icons'), local('MaterialIcons-Regular'), url('../fonts/material-icons/MaterialIcons-Regular.woff2') format('woff2'), url('../fonts/material-icons/MaterialIcons-Regular.woff') format('woff'), url('../fonts/material-icons/MaterialIcons-Regular.ttf') format('truetype'); }
+.material-icons{ font-family: 'Material Icons'; font-weight: normal; font-style: normal; font-size: 24px; display: inline-block; line-height: 1; text-transform: none; letter-spacing: normal; word-wrap: normal; white-space: nowrap; direction: ltr; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; -moz-osx-font-smoothing: grayscale; font-feature-settings: 'liga'; }
+
+/* ANIMATIONS */
+@-webkit-keyframes rotate{ 0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)} 100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)} }
+@keyframes rotate{ 0%{-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);-webkit-transform:rotate(0deg);transform:rotate(0deg)} 100%{-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);-webkit-transform:rotate(360deg);transform:rotate(360deg)} }

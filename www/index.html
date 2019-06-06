@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#2196f3">
+  <title>Capitán Fitness | Crew</title>
+
+  <link rel="shortcut icon" type="image/png" href="assets/images/favicon_crew.png">
+
+  <link rel="stylesheet" href="assets/libs/framework7/css/framework7.bundle.css">
+  <link rel="stylesheet" href="assets/libs/framework7/css/framework7-icons.css ">
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+  <div id="app">
+
+    <div class="panel panel-left panel-reveal">
+      <div class="block">
+        <p><a class="col  open-confirm" href="#">Cerrar Sesion</a></p>
+        <p><a href="#" class="open-password">Cambiar Contraseña</a></p>
+      </div>
+      <a href="#" class="button-profile"></a>
+    </div>
+
+    <div class="view view-main">
+      <div class="page">
+        <div class="toolbar tabbar tabbar-labels toolbar-bottom">
+          <div class="toolbar-inner">
+            <a href="/" class="tab-link" data-route-tab-id="tab-classes">
+              <i class="material-icons">home</i>
+              <span class="tabbar-label">Clases</span>
+            </a>
+
+            <a href="/tab-week" class="tab-link" data-route-tab-id="tab-week">
+              <i class="material-icons">today</i>
+              <span class="tabbar-label">Semana</span>
+            </a>
+            <a href="/tab-programming" class="tab-link" data-route-tab-id="tab-programming">
+              <i class="material-icons">assignment</i>
+              <span class="tabbar-label">Programacion</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="tabs-swipeable-wrap">
+          <div class="tabs tabs-routable">
+            <div class="tab page-content" id="tab-classes"></div>
+            <div class="tab page-content" id="tab-week"></div>
+            <div class="tab page-content" id="tab-programming"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="login-screen" id="main-login">
+      <div class="view">
+        <div class="page">
+          <div class="page-content login-screen-content">
+            <div class="login-screen-title">Capitán Fitness | Crew<br><img src="assets/images/logo.png" width="100"></div>
+            <form id="main-form">
+              <div class="list">
+                <ul>
+                  <li class="item-content item-input">
+                    <div class="item-inner">
+                      <div class="item-title item-label">Usuario</div>
+                      <div class="item-input-wrap">
+                        <input type="text" name="username" placeholder="Ingrese Usuario" autocomplete="dontdoit">
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item-content item-input">
+                    <div class="item-inner">
+                      <div class="item-title item-label">Contraseña</div>
+                      <div class="item-input-wrap">
+                        <input type="password" name="password" placeholder="Ingrese Contraseña" autocomplete="dontdoit">
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="main-submit"> <input type="submit" class="button button-fill color-blue" value="Ingresar"> </div>
+
+              <input type="hidden" name="grant_type" value="password">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/libs/framework7/js/framework7.bundle.js"></script>
+  <script src="assets/js/moment-with-locales.min.js"></script>
+  <script src="assets/js/library.js"></script>
+  <script src="assets/js/routes.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+:root {
+  --f7-theme-color: #626262;
+  --f7-font-size: 14px;
+  --f7-font-family: 'Open Sans', sans-serif;
+
+  --f7-navbar-bg-image: none;
+  --f7-navbar-font-size: 16px;
+  --f7-navbar-text-color: #8b91a0;
+  --f7-navbar-bg-color: #2b303b;
+  --f7-navbar-title-font-weight: 700;
+  --f7-bars-link-color: #8b91a0;
+
+  --f7-page-bg-color: #f9f9f9;
+
+  --f7-panel-bg-color: #20242c;
+
+  --f7-list-font-size: 14px;
+  --f7-list-item-border-color: #ecf0f1;
+  --f7-list-item-divider-font-size: 12px;
+  --f7-list-item-divider-font-weight: 600;
+  --f7-list-item-divider-bg-color: #e5e8e9;
+  --f7-list-item-divider-text-color: #7b7d82;
+
+  --f7-list-group-title-font-weight: 600;
+  --f7-list-group-title-font-size: 12px;
+  --f7-list-group-title-bg-color: #e5e8e9;
+  --f7-list-group-title-text-color: #7b7d82;
+
+  --f7-toolbar-bg-color: #2b303b;
+  --f7-tabbar-link-active-color: #fff;
+}
+.navbar{ font-family: 'Montserrat', sans-serif; letter-spacing: -1px; }
+.navbar .title{ padding: 0 1px;}
+
+.item-divider, .list-group-title{ text-transform: uppercase !important;}
+.item-divider:before{ display: none !important;}
